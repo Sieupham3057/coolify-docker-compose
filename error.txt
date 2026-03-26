@@ -1,0 +1,319 @@
+2026-Mar-26 05:55:37.998913 Docker 29.3.1 with BuildKit and Buildx detected on deployment server (localhost).
+2026-Mar-26 05:55:38.012005 Starting deployment of coolify-docker-compose:main-sczngtnrkh3n95tzgte8pq28 to localhost.
+2026-Mar-26 05:55:38.307877 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.12
+2026-Mar-26 05:55:40.255791 ----------------------------------------
+2026-Mar-26 05:55:40.275090 Importing Sieupham3057/coolify-docker-compose:main (commit sha bfbca106d26fa08d09267a4a27239c2537e44a1a) to /artifacts/l14guowknfh0jl6cr7us2zog.
+2026-Mar-26 05:55:47.155334 Added 10 ARG declarations to Dockerfile for service api (multi-stage build, added to 2 stages).
+2026-Mar-26 05:55:47.165772 Pulling & building required images.
+2026-Mar-26 05:55:47.425412 Adding build arguments to Docker Compose build command.
+2026-Mar-26 05:56:36.151612 Removing old containers.
+2026-Mar-26 05:56:36.346039 Starting new application.
+2026-Mar-26 05:57:14.273523 ========================================
+2026-Mar-26 05:57:14.291868 Deployment failed: Command execution failed (exit code 1): docker exec l14guowknfh0jl6cr7us2zog bash -c 'COOLIFY_BRANCH=main COOLIFY_RESOURCE_UUID=xnsw7e7z7davtruorq1jft88  docker compose --env-file /artifacts/l14guowknfh0jl6cr7us2zog/.env --project-name xnsw7e7z7davtruorq1jft88 --project-directory /artifacts/l14guowknfh0jl6cr7us2zog -f /artifacts/l14guowknfh0jl6cr7us2zog/docker-compose.sqlserver.yml up -d'
+2026-Mar-26 05:57:14.291868 Error:  sqlserver Pulling
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Pulling fs layer
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Pulling fs layer
+2026-Mar-26 05:57:14.291868 cb5e374be662 Pulling fs layer
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [>                                                  ]  1.049MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [>                                                  ]  3.146MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [>                                                  ]   7.34MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [===>                                               ]  2.097MB/31.56MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [=>                                                 ]  2.097MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=>                                                 ]  12.58MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [======>                                            ]  4.194MB/31.56MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [===>                                               ]  5.243MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=>                                                 ]  17.83MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [=============>                                     ]  8.389MB/31.56MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [==================>                                ]  11.53MB/31.56MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [=====>                                             ]  9.437MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==>                                                ]  24.12MB/490.2MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [========>                                          ]  14.68MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==>                                                ]  29.36MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [==========================>                        ]  16.78MB/31.56MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [============>                                      ]  19.92MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===>                                               ]  35.65MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [====================================>              ]  23.07MB/31.56MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Downloading [===========================================>       ]  27.26MB/31.56MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [===============>                                   ]  25.17MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [====>                                              ]  40.89MB/490.2MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [==================>                                ]  30.41MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [====>                                              ]  48.23MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Download complete
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [======================>                            ]   36.7MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=====>                                             ]  54.53MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [=========================>                         ]  41.94MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======>                                            ]  60.82MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [==============================>                    ]  49.93MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======>                                            ]  62.91MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [==================================>                ]  56.62MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======>                                            ]  63.96MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [======================================>            ]  62.91MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=======>                                           ]  69.21MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [=========================================>         ]  69.21MB/82.52MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=======>                                           ]   75.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [========>                                          ]  80.74MB/490.2MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [=============================================>     ]  74.45MB/82.52MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [========>                                          ]  88.08MB/490.2MB
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Downloading [================================================>  ]  80.74MB/82.52MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Download complete
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=========>                                         ]  94.37MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==========>                                        ]  100.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==========>                                        ]    107MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===========>                                       ]  114.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [============>                                      ]  121.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============>                                     ]  127.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============>                                     ]  133.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==============>                                    ]  140.4MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==============>                                    ]  145.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 cb5e374be662 Pull complete
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===============>                                   ]  153.1MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [================>                                  ]  158.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [================>                                  ]  165.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=================>                                 ]    172MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==================>                                ]  178.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==================>                                ]  185.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===================>                               ]  191.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [====================>                              ]  198.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=====================>                             ]  206.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=====================>                             ]  212.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======================>                            ]  220.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=======================>                           ]  226.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=======================>                           ]  232.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [========================>                          ]  240.1MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=========================>                         ]  246.4MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=========================>                         ]  252.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==========================>                        ]    259MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===========================>                       ]  265.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===========================>                       ]  272.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [============================>                      ]  278.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============================>                     ]  285.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============================>                     ]  292.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==============================>                    ]  298.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===============================>                   ]  305.1MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===============================>                   ]  312.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [================================>                  ]  317.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=================================>                 ]    324MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=================================>                 ]  330.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==================================>                ]  336.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===================================>               ]  343.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===================================>               ]  349.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [====================================>              ]  356.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [====================================>              ]  362.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=====================================>             ]  369.1MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======================================>            ]  375.4MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [======================================>            ]  381.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=======================================>           ]    389MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [========================================>          ]  395.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=========================================>         ]  402.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=========================================>         ]  408.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==========================================>        ]  416.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===========================================>       ]  422.6MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===========================================>       ]  429.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [============================================>      ]  436.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============================================>     ]  443.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=============================================>     ]  448.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==============================================>    ]  456.1MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===============================================>   ]  463.5MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [===============================================>   ]  469.8MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [================================================>  ]  475.9MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=================================================> ]  482.3MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [=================================================> ]  487.7MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Downloading [==================================================>]  490.2MB/490.2MB
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Download complete
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 2 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 3 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 4 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 5 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 6 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 7 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 8 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 9 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 10 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 11 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 12 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Extracting 13 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 329cc9a52dc9 Pull complete
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 1 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 2 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Extracting 3 s
+2026-Mar-26 05:57:14.291868 81d0986f7e14 Pull complete
+2026-Mar-26 05:57:14.291868 sqlserver Pulled
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-data"  Creating
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-data"  Created
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-logs"  Creating
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-logs"  Created
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-config"  Creating
+2026-Mar-26 05:57:14.291868 Volume "xnsw7e7z7davtruorq1jft88_sqlserver-config"  Created
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Creating
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Created
+2026-Mar-26 05:57:14.291868 Container api-xnsw7e7z7davtruorq1jft88-055546149039  Creating
+2026-Mar-26 05:57:14.291868 Container api-xnsw7e7z7davtruorq1jft88-055546149039  Created
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Starting
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Started
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Waiting
+2026-Mar-26 05:57:14.291868 Container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727  Error
+2026-Mar-26 05:57:14.291868 dependency failed to start: container sqlserver-xnsw7e7z7davtruorq1jft88-055546126727 is unhealthy
+2026-Mar-26 05:57:14.291868 exit status 1
+2026-Mar-26 05:57:14.479138 ========================================
+2026-Mar-26 05:57:15.005137 Gracefully shutting down build container: l14guowknfh0jl6cr7us2zog
